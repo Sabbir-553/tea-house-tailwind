@@ -167,11 +167,13 @@
 
         <!-- clintes review start here  -->
 
-        <section class="my-32 bg-gradient-to-r from-[#FF8938] to-red-700 rounded-xl">
-            <div class="flex px-16 py-20 gap-10 items-center">
+        <section
+            class="my-32 lg:bg-gradient-to-r from-[#FF8938] to-red-700 bg-gradient-to-b from-[#ff8938] to-red-700 rounded-xl">
+            <div class="flex lg:flex-row flex-col lg:px-16 lg:py-20 p-5 gap-10 items-center">
                 <div class="relative">
                     <h2 class="z-50 font-bold text-white text-4xl ">Meet Our Super <br> Clintes</h2>
-                    <p class=" z-40font-medium pt-5 text-white pr-16 lg:w-5/6">There are many variations of passages of Lorem Ipsum
+                    <p class=" z-40font-medium pt-5 text-white pr-16 lg:w-5/6 w-full">There are many variations of
+                        passages of Lorem Ipsum
                         available, but the majority have suffered alteration in some form, by injected humour, or
                         randomised words which don't look even slightly believable. </p>
                     <button class=" z-20 btn mt-5 font-bold bg-white text-orange-600">Show All</button>
@@ -179,7 +181,7 @@
                 </div>
 
                 <!-- review container  -->
-                <div class="relative">
+                <div class="relative lg:p-0 p-2">
                     <!--next clints review  -->
                     <div class="bg-white opacity-40 p-8 rounded-xl relative mb-16 z-0">
                         <img src="images/client.png" alt=""
@@ -193,7 +195,7 @@
                         </div>
                     </div>
                     <!-- current clints review  -->
-                    <div class="bg-white p-8 rounded-xl absolute top-32 -left-32 lg:w-[430px] z-20">
+                    <div class="bg-white p-8 rounded-xl absolute top-32 lg:-left-32 lg:w-[430px] z-20">
                         <img src="images/client.png" alt=""
                             class="border-4 bg-white border-white rounded-full absolute -top-7 -left-6">
                         <p>We are providing the best and suitable home insurance services for the people who are
@@ -270,53 +272,64 @@
             </div>
         </section>
     </main>
-    <footer class="bg-gradient-to-r from-[#ff00001a] to-[#ff00001a]">
-        <section class="container mx-auto">
-            <div class="flex justify-between items-center pt-32 pb-24 lg:flex-row flex-col">
-                <div>
-                    <img src="images/cup.png" alt="" class="w-full">
-                </div>
-                <div class="flex items-center gap-7 lg:flex-row flex-col lg:pt-0 pt-2">
-                    <h6 class="text-base font-semibold ">Ready to get Started</h6>
-                    <button class="btn btn-primary text-base text-white">Get Started</button>
-                </div>
+
+
+
+    <!-- footer area start here  -->
+    <footer class="bg-gradient-to-r from-[#ff00001a] to-[#ff00001a] px-16">
+        <div class="flex justify-between items-center pt-32 pb-14 lg:flex-row flex-col p-5">
+            <div>
+                <img src="images/cup.png" alt="" class="w-full">
             </div>
-            <div class="grid lg:grid-cols-4  gap-44 text-black lg:text-none text-center">
-                <nav class="flex flex-col gap-4">
-                    <h6 class="footer-title text-black">Quick Link</h6>
-                    <a class="link link-hover text-[#494949]">Home</a>
-                    <a class="link link-hover text-[#494949]">About Us</a>
-                    <a class="link link-hover text-[#494949]">Insurance</a>
-                    <a class="link text-[#494949] link-hover">Privacy Policy</a>
-                </nav>
-                <nav class="flex flex-col gap-4">
-                    <h6 class="footer-title">Our Services</h6>
-                    <a class="link link-hover">Life Insurence</a>
-                    <a class="link link-hover">Car Insirence</a>
-                    <a class="link link-hover">Health Insurence</a>
-                    <a class="link link-hover">House Insurence</a>
-                </nav>
-                <nav class="flex flex-col gap-4">
-                    <h6 class="footer-title">Help</h6>
-                    <a class="link link-hover">FAQs</a>
-                    <a class="link link-hover">Contact Us</a>
-                </nav>
-                <nav class="flex flex-col gap-4">
-                    <h6 class="footer-title">Subscribe to our <br>newsletter</h6>
-                    <div class="flex">
-                        <input type="text" placeholder="Email Address"
-                            class="p-2 outline-none rounded-lg sm:justify-center">
-                        <!-- <div class="btn btn-primary"><img src="images/arrow.png" alt=""></div> -->
+            <div class="flex items-center gap-7 lg:flex-row flex-col lg:pt-0 pt-2">
+                <h6 class="text-base font-semibold ">Ready to get Started</h6>
+                <button class="btn btn-primary text-base text-white">Get Started</button>
+            </div>
+        </div>
+        <div class="footer text-base-content p-10">
+            <nav>
+                <h6 class="footer-title">Quick link</h6>
+                <a class="link link-hover">Homw</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Insurence</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Our Services</h6>
+                <a class="link link-hover">Life Insurence</a>
+                <a class="link link-hover">Car Insirence</a>
+                <a class="link link-hover">Health Insurence</a>
+                <a class="link link-hover">House Insurence</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Help</h6>
+                <a class="link link-hover">FAQs</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Subscribe to our <br>newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join ">
+                        <input type="text" placeholder="Email Address" class="bg-transparent border-b-2 border-black " />
+                        <button class="btn btn-primary rounded-full"><i class="fa-solid fa-chevron-right text-xl"></i></button>
                     </div>
-                    <div class="flex lg:flex-row sm:justify-center gap-5 pt-5">
+                    <div class="flex lg:flex-row sm:justify-center gap-5 lg:justify-start pt-7">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
                         <a href=""><i class="fab fa-twitter"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
                     </div>
-                </nav>
-            </div>
+                    
+                </fieldset>
+            </form>
+        </div>
+        <p class="text-center mt-10 pb-24 text-base ">@2027 UIDesign.to - All rights reserved</p>
+    </footer>
+                    
 
-            <p class="text-center mt-24 pb-24 text-base ">@2027 UIDesign.to - All rights reserved</p>
+            
         </section>
     </footer>
 </body>
